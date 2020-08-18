@@ -6,7 +6,9 @@
  *  ##body empty body not exeptable;
  * )
  */
-#define __main__(body...)  int main(int __arg__, char** __args__){ __FILE__, __LINE__, printf(""); body ; return(0)}
+#define __main__(body...)\
+int main(int __arg__, char** __args__)\
+{ __FILE__, __LINE__, print("") body return(0)}
 
 /*
  * Declear a function 
@@ -20,7 +22,9 @@
  *  ## function body can't be empty
  * )
  */
-#define def(__name, __func_arguments , args... ) void* __name __func_arguments{ __FILE__, __LINE__, print("") args ; return(0) }
+#define def(__name, __func_arguments , args... )\
+void* __name __func_arguments\
+{ print("") args return(0) }
 
 /*
  * Call a function

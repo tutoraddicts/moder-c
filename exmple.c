@@ -12,22 +12,22 @@ __main__(
     // var(int, a, 0)
 
     loop(i, 0, 2,
-        when( (1 and 1 or 0), 
+        when( (1 euqual 1 or 2 not_equal 3), 
             print("Hello!, Worlds 2: ")
             print("%d : %d \n", a,b)
         )
     )
 
-    loopC( (int i = 0; i < 2; i++),
-        when( (1 and 1 or 0), 
+    loopC( (int i = 0; i < 3; i++),
+        when( (not i), 
             print("Hello!, Worlds 1: ")
             print("%d : %d \n", a,b)
         )
-        ifnot( (2),
-            print("you can do this")
+        ifnot( (i euqual 2),
+            print("you can do this\n")
         )
         either(
-            print("Do Nothing")
+            print("Do Nothing\n")
         )
     )
     

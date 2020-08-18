@@ -8,8 +8,13 @@
 #define either(body...) else { body }
 #define ifnot(__condition, body...) else if __condition { body }
 #define when(__condition, body...) if __condition { body } 
+
+/* Logical operator */
 #define and &&
 #define or ||
+#define euqual ==
+#define not_equal !=
+#define not !
 
 
 #define loop(__var_name, __start, __end, body...) for_loop(int __var_name = __start; __var_name < __end; __var_name++) { body }
@@ -19,9 +24,10 @@
 #define loop_on(__var_name, __array, body...)\
 {\
 long size = getASize(__array)\
-    loop(__var_name, 0, size,\
+    for_loop(int index = __start; index < __end; index++){\
+        void* __var_name = __array[i];\
         body\
-    )\
+    }\
 }
 
 #define while(__condition, body...) while_loop __condition { body }
