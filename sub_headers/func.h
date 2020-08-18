@@ -1,7 +1,4 @@
 // #define import(__header) #include<__header>
-#define __s {
-
-#define __e }
 
 /*
  * main function to declear it 
@@ -10,6 +7,12 @@
  * )
  */
 #define __main__(body...)  int main(int arg, char** args){ __FILE__, __LINE__, print("") body }
+
+/*
+ * Declear a function 
+ * 
+ */
+#define def(__name, args...) void __name( ## args );
 
 /*
  * Define a function 
