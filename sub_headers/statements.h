@@ -4,6 +4,7 @@
 
 #define getASize(array) sizeof((&a)[1])/sizeof(&a);
 #define for_loop for
+#define while_loop while
 
 #define either(body...) else { body }
 #define ifnot(__condition, body...) else if __condition { body }
@@ -30,4 +31,4 @@ long size = getASize(__array)\
     }\
 }
 
-#define while(__condition, body...) while_loop __condition { body }
+#define until(__condition, body...) while_loop __condition { body }

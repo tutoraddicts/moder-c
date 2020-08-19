@@ -9,9 +9,9 @@
 #define print(__s, args...) printf(__s, ## args);
 
 /*
- * return value return(vale)
+ * return value send(vale)
  */
-#define return(__val) return __val;
+#define send(__val) return __val;
 
 /*
  * declear variable

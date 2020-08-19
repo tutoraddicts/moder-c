@@ -8,7 +8,7 @@
  */
 #define __main__(body...)\
 int main(int __arg__, char** __args__)\
-{ __FILE__, __LINE__, print("") body return(0)}
+{ __FILE__, __LINE__, print("") body send(0) }
 
 /*
  * Declear a function 
@@ -24,7 +24,7 @@ int main(int __arg__, char** __args__)\
  */
 #define def(__name, __func_arguments , args... )\
 void* __name __func_arguments\
-{ print("") args return(0) }
+{ print("") args send(0) }
 
 /*
  * Call a function

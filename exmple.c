@@ -7,9 +7,9 @@ def(pro, (void),
 )
 
 __main__( 
-    int a = 15;
+    var(int, a, 15)
     int b = 4;
-    // var(int, a, 0)
+    
 
     loop(i, 0, 2,
         when( (1 euqual 1 or 2 not_equal 3), 
