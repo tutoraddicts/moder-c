@@ -93,6 +93,6 @@ Let's see the syntax
 
 Syntax is quite simple
 
-    while( (__conditions),  // I don't think now I need to explain too much
+    continue( (__conditions),  // I don't think now I need to explain too much
         body
     )
