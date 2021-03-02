@@ -2,7 +2,7 @@
  * this header file contain all the statemetns and loops 
  */
 
-#define getASize(array) sizeof((&a)[1])/sizeof(&a);
+#define getASize(array) sizeof(array)/sizeof(array[1]);
 #define for_loop for
 #define while_loop while
 
