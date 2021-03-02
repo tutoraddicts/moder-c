@@ -10,7 +10,7 @@ The syntax is preety simple to follow and also you can use default *C syntax* wi
 func the keyword to declear a function. And here you do not have to specify a function return type
 let's see an example > let's *declear* a add function
     
-    func(**add**, (int, int)) // we done declearing a function
+    func(add, (int, int)) // we done declearing a function
 
 ## HOW TO DEFINE A FUNCTION : 
 The syntax is preety simple to follow and also you can use default *C syntax* without any hassle
@@ -23,7 +23,7 @@ The syntax is preety simple to follow and also you can use default *C syntax* wi
 def the keyword to define a function. And here you do not have to specify a function return type
 let's see an example > let's *define* a add function
     
-    def(**add**, (int **a**, int **b**), 
+    def(add, (int a, int b), 
         __function_body__ // you can't leave function body empty
     )
 
